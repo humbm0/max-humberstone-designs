@@ -48,6 +48,17 @@ section#hero{
   font-style:italic;
   text-align:center;
   opacity:.5;
+  /*animation: slideUp 1s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.0s;*/
+}
+@keyframes slideUp {
+  0% {
+    bottom: -10%;
+  }
+  100% {
+    bottom: 7%;
+  }
 }
 
 #hero scroll-down img{
@@ -56,6 +67,10 @@ section#hero{
 }
 #mouse {
   height: 45px;
+}
+
+.hidden{
+  display: none;
 }
 
 /*HERO--------------------------------------------------*/
@@ -322,7 +337,18 @@ section#project-col{
   z-index: 21;
   left: 30px;
   top : 30px;
+  /*animation: slideRight .7s ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 2.0s;*/
 }
+/*@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(90px);
+  }
+}*/
 .hamburger-slim:before, .hamburger-slim:after {
   background: #000;
   backface-visibility: hidden;
