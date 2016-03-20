@@ -1,0 +1,18 @@
+<svg id="mouse" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90.04 146.73">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-width: 5px;
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+      }
+    </style>
+  </defs>
+  <rect class="cls-1" x="2.5" y="2.5" width="85.04" height="141.73" rx="42.52" ry="42.52"/>
+  <circle class="cls-2" cx="45.02" cy="38.3" r="7.09"/>
+</svg>
