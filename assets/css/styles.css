@@ -328,65 +328,35 @@ section#project-col{
 }
 
 /* NAV ----------------------------------------------*/
-.hamburger-slim {
-  background: transparent;
-  margin: 0;
+.menu {
+  cursor: pointer;
+  margin: 0 auto;
+  padding-left: 1.25em;
+  position: relative;
+  width: 30px;
+  height: 40px;
   position: fixed;
-  height: 20px;
-  width: 50px;
   z-index: 21;
   left: 30px;
   top : 30px;
-  /*animation: slideRight .7s ease-in-out;
-  animation-fill-mode: forwards;
-  animation-delay: 2.0s;*/
 }
-/*@keyframes slideRight {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(90px);
-  }
-}*/
-.hamburger-slim:before, .hamburger-slim:after {
-  background: #000;
-  backface-visibility: hidden;
-  content: "";
-  height: 2px;
-  left: 0;
-  transition: 0.75s;
-  width: 30px;
-}
-.hamburger-slim:before {
-  box-shadow: #000 0 9px 0 0;
+.menu-global {
+  backface-visibility: vidible;
   position: absolute;
+  left: 0;
+  border-top: 1.7px solid #000;
+  width: 100%;
+  transition: 0.55s;
+}
+.menu-top {
   top: 0;
 }
-.hamburger-slim:after {
-  position: absolute;
-  top: calc(100% - 2px);
+.menu-middle {
+  top: 10px;
 }
-.hamburger-slim:active:before {
-  box-shadow: transparent 0 0 0 0;
-  top: 50%;
-  transform: rotate(225deg);
+.menu-bottom {
+  top: 20px;
 }
-.hamburger-slim:active:after {
-  top: 50%;
-  transform: rotate(315deg);
-}
-
-.slide-in-left{
-  transition: 1s;
-  left: 0 !important;
-}
-.fade-in{
-  transition: opacity 1s, z-index 2s;
-  opacity: .6 !important;
-  z-index: 18 !important;
-}
-
 
 nav{
   width: 100%;
@@ -398,7 +368,7 @@ nav .wrapper{
   background: #fff;
   z-index: 20;
   top:0;
-  left:-500px;
+  left: -500px;
   padding-left: 90px;
   width: 450px;
   -webkit-box-shadow: 7px 0px 55px -3px rgba(0,0,0,0.45);
@@ -414,9 +384,9 @@ nav .shadow{
   position: fixed;
   top: 0;
   left: 0;
-  z-index: -1;
+  z-index: 18;
   opacity: 0;
-  display: block;
+  visibility: hidden;
 }
 nav span{
   color: #6a6a6a;
